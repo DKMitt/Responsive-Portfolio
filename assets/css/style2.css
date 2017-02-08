@@ -82,14 +82,12 @@ nav {
 	float: right;
 }
 
-
 .mainContent {
 	border-color: solid #dddddd;
-	padding: 20px 0 0 0;
+	padding: 25px 0 0 0;
 	border: 5px;
-	
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 p {
@@ -126,21 +124,19 @@ p {
 }
 
 .rightSide {
-	/*width: 89%;*/
 	float: right;
-	/* margin: 1%; */
 	text-align: center;
 	background-color: #ffffff;
 	padding: 25px;
 	border: solid #cccccc;
-	margin: 0% 1% 18% 1%;
+	margin: 0% 1% 25px 1%;
+	display: inline;
 }
 
 .socialMedia img {
 	height: 60px;
 	width: 60px;
 	margin: 5px;
-	align: center;
 }
 
 .tealblock {
@@ -201,40 +197,134 @@ textarea {
 	border-width: 1px;
 }
 
-@media (max-width: 980px) {
+@media only screen and (max-width: 980px) {
 	.wrapper {
 		margin: 0 auto;
 		max-width: 980px;
 		width: 100%;
 	}
 
-	.rightSide {
-		display: ;
-		width: 92%;
+	.nameBlock {
+		margin: 0px 0 0 30px;
 	}
 
-	.leftSide
+	.navLinks {
+		margin: 0 25px 0 0;
+	}
+
+	.leftSide {
+		width: 530px;
+		display: inline;
+		float: left;
+		margin-bottom: 120px;
+	}
+
+	.rightSide {
+		display: inline;
+		float: right;
+		width: 220px;
+		margin-top: -17px;
+	}
+
+	.socialMedia img {
+		float: left;
+	}
+
+	.section {
+		/*margin-bottom: 100px;*/
+	}
+
+	.form {
+		/*margin-bottom: 100px;*/
+	}
+
+	.portPics {
+	width: 100%;
+	padding: 0px 0 0 0px ;
+	}
+
+	.mainContent {
+		margin-bottom: 150px;
+	}
 }
 
-@media (max-width: 768px) {
+
+@media only screen and (max-width: 768px) {
 	.wrapper {
 		margin: 0 auto;
 		max-width: 768px;
 		width: 100%;
+	}
+	.header {
+		position: fixed;
+		width: 100%;
+		height: 5.75%;		
+	}
+
+	.navLinks {
+		float: right;
+		width: auto;
+		display: inline;
+		margin: 0px;
+	}
+
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	}
+
+	li {
+	    float: left;
+	}
+
+	li a {
+	    display: block;
+	    text-align: center;
+	    padding: 0px 32px 0px 0px;
+	    text-decoration: none;
 	}
 
 	h2 {
 		text-align: left;
 	}
 
+	.nameBlock {
+		margin: 0px 0 0 25px;
+	}
+
+	.leftSide {
+		margin-top: 80px;
+		margin-bottom: 50px;
+		width: 90.5%;
+	}
+
 	.rightSide {
+		/*margin: 0px 5px 25px 0;*/
 		display: block;
 		width: 90.5%;
+		margin-bottom: 110px;
+	}
+
+	.portPics {
+		display: inline;
+		padding: 0px 2px 0 0px ;
+		width: 46.5%;
+	}
+
+	.form {
+		margin-bottom: 40px;
+	}
+
+	.mainContent {
+		margin-bottom: 350px;
 	}
 
 	.socialMedia img {
 		float: left;
 	}
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -246,52 +336,55 @@ textarea {
 	}
 
 	.header {
-		
+		position: fixed;
+		width: 100%;
+		height: 13%;		
 	}
 
 	h2 {
 		text-align: left;
 	}
 
-	.mainContent {
-		
-	}
-
 	.nameBlock {
 		width: 100%;
-		margin: auto;
+		margin: 0 0 0 0;
+		display: inline-block;
+		position: fixed;
+		width: 100%;
+		left:0px;
+		top:0px;
+		text-align: center;
 	}
 
 	.navLinks {
-		float:none;
-			width: auto;
-	}
-	
-	nav {
-		width: 100%;
-		margin: 0px;		
+		
+		width: auto;
+		display: inline-block;
+		margin: 70px;
 	}
 
-	nav ul {
-		list-style: none;
-		margin: 0 auto;
-		padding-left: 0;
-
+ 	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
 	}
 
-	nav ul li {
-		text-align: center;
-		margin-left: 0 auto;
-		width: 100%;
-
+	li {
+	    float: left;
 	}
 
-	nav ul li a {
-		padding: 8px 0;
-		font-size: 16px;
+	li a {
+	    display: block;
+	   
+	    text-align: center;
+	    padding: 5px 80px 0 5px;
+	    text-decoration: none;
 	}
+
 	.leftSide {
-		/* width: 100%; */
+		margin-top: 140px;
+		width: 88.5%;
 	}
 
 	.aboutmePic {
@@ -299,12 +392,17 @@ textarea {
 		height: auto;
 	}
 
+	.portPics {
+	width: 100%;
+	padding: 0px 0 0 0px ;
+	}
+
+
 	.rightSide {
-		 /*width: 100%; */
-		 /*height: auto; */
-		 
+		margin-top: 15px;
+		margin-bottom: 120px; 
 		display: block;
-		width: 89%;
+		width: 88.5%;
 	}
 
 	.socialMedia img {
